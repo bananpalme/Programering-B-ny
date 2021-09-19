@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+
+#thomas{
+    height: 30vh;
+    width: 30vh;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all .3s ease-in-out;
+}
+
+body{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+}
+
+header{
+    background-color: black;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    background-color: yellow;
+}
+
+footer{
+    background-color: rgb(204, 204, 24);
+}
+
+#ur{
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 20vh;
+}
+
+#ur div:nth-of-type(2), #ur div:nth-of-type(4){
+    margin-bottom: 0vh;
+}

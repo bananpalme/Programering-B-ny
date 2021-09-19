@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap');
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Montserrat;
+
+}
+
+
+body{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-rows: 1fr 6fr 1fr;
+  }
+
+
+header{
+background-color: aqua;
+    display: grid;
+    padding: 2rem;
+    gap: 2rem;
+    grid-template-columns: repeat(4,1fr);
+    font-size: 2.5rem;
+    background-image: url(https://i.kym-cdn.com/photos/images/original/001/358/964/b5a.gif);
+    background-size: 8rem;
+} 
+
+main{
+background-color: cadetblue;
+font-size: 5rem;
+background-image: url(https://c.tenor.com/YaHGMAb11DMAAAAM/polish-toilet.gif);
+} 
+
+footer{
+background-color: deepskyblue;
+background-image: url(https://i.pinimg.com/originals/f4/26/14/f426142ae405d6971e518bde32078898.gif);
+background-size: 6rem;
+}  
+
+
+
+main{
+    background-color: lightcoral;
+    display:grid;
+    grid-auto-flow:column;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.page{
+    background-color: rgba(222, 219, 235, 0.2);
+    width:100vw;
+    display:grid;
+    place-items: center;
+    scroll-snap-align: center;
+}
+
+.menu{
+    background-color: rgba(233, 233, 243, 0.7);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+
+}
+
+.fod{
+width: 100%;
+height: 100%;
+display: grid;
+place-items: center;
+font-size: 2.5rem;
+}
