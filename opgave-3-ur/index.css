@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono';
+}
+
+#thomas{
+    height: 30vh;
+    width: 30vh;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: cover;
+    transition: all 1s linear;
+}
+
+
+
+.change-color {
+	background: white;
+	width: 100%;
+	height: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+}
+
+header{
+    background-color: black;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+}
+
+audio{
+    display: none;
+}
+
+button {
+    font-size: 16px;
+    color: rgb(240, 8, 8);
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 50px;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background: rgba(201, 55, 55, 0.8);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
+}
+
+button:hover {
+    border-radius: 2rem;
+    opacity: 0.8;
+    transform: scale(1.2)
+}
+
+main{
+    display: grid;
+    place-items: center;
+    background-color: yellow;
+}
+
+footer{
+    background-color: rgb(204, 204, 24);
+}
+
+#ur{
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 20vh;
+}
+
+#ur div:nth-of-type(2), #ur div:nth-of-type(4){
+    margin-bottom: 0vh;
+}
