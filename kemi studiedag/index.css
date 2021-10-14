@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Inconsolata';
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+
+
+main{
+    background-color:grey;
+    display: grid;
+    place-items: center;
+    background-size: 50%;
+    background-position: bottom left;
+    height: 80vh;
+}
+
+footer{
+    background-color: grey;
+    display: grid;
+    place-items: center;
+    height: 20vh;
+}
+
+#button{
+    color: white;
+    height: 3rem;
+    width: 5vw;
+    border:1px solid white;
+    padding: 0.4rem;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    
+}
+
+#button:hover{
+    transform: scale(1.2);
+    border-radius: 2rem;
+    background-color: aqua
+}
