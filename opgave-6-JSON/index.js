@@ -91,7 +91,7 @@ people.map( person => {
     let htmlString = '<h1>' + person.name + ' ' + person.surname + '</h1>' 
     htmlString += '<p>Monthly listeners: ' + person.listeners + '</p>'
     htmlString += '<p>Albums: ' + person.album.join(', ') + '</p>'
-    htmlString += '<p>Bananpalmes favorites: ' + person.song.join(', ') + '</p>'
+    htmlString += '<p>Bananpalmes favorite songs: ' + person.song.join(', ') + '</p>'
     htmlString += '<p>Most listened to in ' + person.location + '</p>'
     
     newDiv.innerHTML = htmlString
