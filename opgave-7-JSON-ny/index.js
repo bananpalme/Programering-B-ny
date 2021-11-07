@@ -10,12 +10,12 @@ fetch('./data/artifact.json')
     .then (json => {
             console.log(json)
             console.log(json)
-            data = json.artifacts
+            data = json.artifact
             document.querySelector('#title').innerHTML = json.description
 
 
-            json.artifacts.map( artifacts => {
-                newCard(artifacts)
+            json.artifacts.map( artifact => {
+                newCard(artifact)
             })
 
         }  )
