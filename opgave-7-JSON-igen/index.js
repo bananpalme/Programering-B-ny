@@ -10,7 +10,7 @@ fetch('./Data/artifact.json')
     .then (json => {
             console.log(json)
             console.log(json)
-            data = json.artifact
+            Data = json.artifact
             document.querySelector('#title').innerHTML = json.description
 
 
