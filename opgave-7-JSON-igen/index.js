@@ -1,10 +1,10 @@
 
 
-let data
+let Data
 
 
 
-fetch('./data/artifact.json')
+fetch('./Data/artifact.json')
 
     .then( res => res.json() )
     .then (json => {
