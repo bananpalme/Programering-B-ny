@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300&family=Roboto&display=swap');
+
+*{
+    font-family:'Roboto' ;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: midnightblue;
+}
+header{
+    display: grid;
+    place-items: center;
+    height: 10vh;
+    color: white;
+    text-shadow: 3px 5px 12px white;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    place-items: center;   
+    height: 80vh;
+}
+
+#activity{
+    width: 80vw;
+    height: 60vh;
+    border: 1px solid white;
+    background: royalblue;
+    border-radius: 1rem;
+    box-shadow: 7px 7px 6px 6px rgb(10, 8, 26);
+
+}
+
+footer{
+    height: 8vh;
+    display: grid;
+    place-items: center;
+}
+
+button{
+    color: white;
+}
+
+.cumlabel{
+    color: white;
+}
