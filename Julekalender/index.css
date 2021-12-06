@@ -12,7 +12,7 @@ body{
 }
 
 header{
-    height: 10rem;
+    height: 20rem;
     color: rgb(59, 110, 127);
     font-size: 2rem;
     gap: 10rem;
@@ -25,11 +25,92 @@ main{
     padding: 2rem;
 }
 
+#video{
+    margin: 2rem;
+    
+}
+
 .door{
     background-color: seagreen;
     background-size: cover;
+    position: relative;
 }
 
 h1{
     margin: 0 auto;
+}
+
+.lock{
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+    z-index: 5;
+    transition: 1s ease-in-out;
+}
+
+.open{
+    width: 0;
+    background-color: royalblue;
+}
+
+@keyframes sovs {
+    40%{
+        background-color: yellow;
+        width: 0;
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    60%{
+        width: 100%;
+        background-color: yellow;
+    }
+}
+
+@keyframes epic {
+    20%{
+        background-color: purple;
+        transform: rotate(90deg);
+    }
+    60%{
+        background-color: hotpink;
+        transform: scale(0.001%);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+
+@keyframes legendary{
+    45%{
+        background-color: greenyellow;
+        
+    }
+    75%{
+        transform: rotate(180deg);
+    }
+    100%{
+        width: 0;
+        transform: scale(0);
+        height: 0;
+    }
+}
+
+.cum{
+    animation: legendary 3s forwards ease-in-out;
+}
+
+.goldenopen{
+    animation: epic 3s forwards ease-in-out;
+}
+
+.sovsjohn{
+    animation: sovs 3s forwards ease-in-out;
 }
