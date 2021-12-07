@@ -12,9 +12,9 @@ body{
 }
 
 header{
-    height: 20rem;
+    height: 30rem;
     color: rgb(59, 110, 127);
-    font-size: 2rem;
+    font-size: 3rem;
     gap: 10rem;
     text-align: center;
 }
@@ -22,23 +22,35 @@ header{
 main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 2rem;
+    padding: 5rem;
+    gap: 10rem;
+    background-color: rgb(52, 48, 45 );
+    width: 90%;
+    place-items: center;
+    position: absolute;
+    left: 6rem;
+    border-radius: 2rem;
+    border: solid .75rem rgb(189, 59, 59);
 }
 
+/* cum burger */
+
 #video{
-    margin: 1rem;
-    
+    margin: 3rem;
 }
 
 .door{
     background-color: seagreen;
     background-size: cover;
     position: relative;
+
 }
 
 h1{
     margin: 0 auto;
 }
+
+
 
 .lock{
     top: 0;
@@ -46,17 +58,20 @@ h1{
     height: 100%;
     width: 100%;
     position: absolute;
-    background-color: white;
+    background-color: rgb(91, 122, 140);
     display: grid;
     place-items: center;
     font-size: 4rem;
     z-index: 5;
     transition: 1s ease-in-out;
+    border: solid 0.5rem black;
+    border-radius: 1rem
 }
 
 .open{
-    width: 0;
-    background-color: royalblue;
+    transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+    background-color: rgb(91, 122, 140);
+    transform-origin: left;
 }
 
 @keyframes sovs {
@@ -83,7 +98,7 @@ h1{
         transform: scale(0.001%);
     }
     100%{
-        transform: scale(0);
+        
     }
 }
 
@@ -97,9 +112,7 @@ h1{
         transform: rotate(180deg);
     }
     100%{
-        width: 0;
-        transform: scale(0);
-        height: 0;
+        
     }
 }
 

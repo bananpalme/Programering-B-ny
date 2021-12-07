@@ -1,8 +1,8 @@
-var epico = new Audio('./assets/epic.mp3');
-var goldlego = new Audio('./assets/gold leg.mp3')
-var legendaryo = new Audio('./assets/legendary.mp3')
-var rareo = new Audio('./assets/rare.mp3')
-var chest = new Audio('./assets/chest.mp3')
+const epico = new Audio('./assets/epic.mp3');
+const goldlego = new Audio('./assets/gold leg.mp3')
+const legendaryo = new Audio('./assets/legendary.mp3')
+const rareo = new Audio('./assets/rare.mp3')
+const chest = new Audio('./assets/chest.mp3')
 
 fetch('./kalender.json')
     .then( res => res.json() )
@@ -18,10 +18,16 @@ fetch('./kalender.json')
             let lock = document.createElement('div')
             lock.classList.add('lock')
             lock.innerHTML = door.date
+
+
             
-            lock.addEventListener('click', () => {
-                
-                
+           
+            
+
+
+            lock.addEventListener("click", () => {
+
+
                 switch(door.rarity){
                     case 'rare':
                         rareo.play()
@@ -47,12 +53,16 @@ fetch('./kalender.json')
                         lock.classList.add('open')
                     break
                     case 'golden':
-                         lock.innerHTML = ''
+                        lock.innerHTML = ''
                         lock.classList.add('goldenopen')
+                        lock.innerHTML = ''
+                        lock.classList.add('open')
                     break
                     case 'legendary':
                         lock.innerHTML = ''
                         lock.classList.add('cum')
+                        lock.innerHTML = ''
+                        lock.classList.add('open')
                     break
                     case 'sovs':
                         lock.innerHTML = ''
