@@ -23,11 +23,10 @@ fetch('./kalender.json')
             
            
             
-
-
+            
+            
             lock.addEventListener("click", () => {
-
-
+                
                 switch(door.rarity){
                     case 'rare':
                         rareo.play()
@@ -46,30 +45,31 @@ fetch('./kalender.json')
                         chest.play()
                     break
                 }
+                
 
                 switch(door.animation){
                     case 'slide':
-                        lock.innerHTML = ''
-                        lock.classList.add('open')
+                        //lock.innerHTML = ''
+                        lock.classList.toggle('open')
                     break
                     case 'golden':
-                        lock.innerHTML = ''
-                        lock.classList.add('goldenopen')
-                        lock.innerHTML = ''
-                        lock.classList.add('open')
+                       // lock.innerHTML = ''
+                        lock.classList.toggle('goldenopen')
+                       // lock.innerHTML = ''
+                        lock.classList.toggle('open')
                     break
                     case 'legendary':
-                        lock.innerHTML = ''
-                        lock.classList.add('cum')
-                        lock.innerHTML = ''
-                        lock.classList.add('open')
+                        //lock.innerHTML = ''
+                        lock.classList.toggle('cum')
+                        //lock.innerHTML = ''
+                        lock.classList.toggle('open')
                     break
                     case 'sovs':
-                        lock.innerHTML = ''
-                        lock.classList.add('sovsjohn')
+                        //lock.innerHTML = ''
+                        lock.classList.toggle('sovsjohn')
                     default:
-                        lock.innerHTML = ''
-                        lock.classList.add('open')
+                       // lock.innerHTML = ''
+                        lock.classList.toggle('open')
                         break
                     }
             })

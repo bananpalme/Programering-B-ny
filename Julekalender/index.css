@@ -17,6 +17,7 @@ header{
     font-size: 3rem;
     gap: 10rem;
     text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 main{
@@ -33,10 +34,20 @@ main{
     border: solid .75rem rgb(189, 59, 59);
 }
 
+#banan{
+    background-color: rgb(130, 50, 50);
+    border-radius: 2rem;
+    width: 75rem;
+    height: 9rem;
+    margin-top: 2rem;
+    border: .25rem solid black;
+}
+
 /* cum burger */
 
 #video{
     margin: 3rem;
+    border: .40rem solid gray;
 }
 
 .door{
@@ -69,9 +80,12 @@ h1{
 }
 
 .open{
+    animation-name: pen;
+    transform-origin: 0% 50%;
     transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
     background-color: rgb(91, 122, 140);
-    transform-origin: left;
+    transform: left;
+    animation: pen 3s forwards ease-in-out;
 }
 
 @keyframes sovs {
