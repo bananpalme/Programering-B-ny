@@ -77,6 +77,7 @@ h1{
     transition: 1s ease-in-out;
     border: solid 0.5rem black;
     border-radius: 1rem
+    transform-origin: left;
 }
 
 .open{
