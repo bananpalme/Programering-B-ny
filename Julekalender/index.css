@@ -82,10 +82,9 @@ h1{
 
 .open{
     animation-name: pen;
-    transform-origin: 0% 50%;
+    transform-origin: left;
     transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
     background-color: rgb(91, 122, 140);
-    transform-origin: left;
     animation: pen 3s forwards ease-in-out;
 }
 
