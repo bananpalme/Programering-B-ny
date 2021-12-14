@@ -76,7 +76,7 @@ h1{
     z-index: 5;
     transition: 1s ease-in-out;
     border: solid 0.5rem black;
-    border-radius: 1rem
+    border-radius: 1rem;
     transform-origin: left;
 }
 
